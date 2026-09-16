@@ -29,5 +29,4 @@ app.get('/erro-assincrono', async (req, res, next) =>{
     await Promise.reject(new Error('Erro na consulta no banco de dados externo'));
   }catch(erro){
     next(erro);
-  }
-});
+  }});
