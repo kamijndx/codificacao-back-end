@@ -24,7 +24,7 @@ O objetivo principal deste repositório é consolidar os conhecimentos essenciai
 - **Gerenciador de Dependências:** [NPM](https://www.npmjs.com/)
 - **Controle de Versão:** [Git](https://git-scm.com/) e [GitHub](https://github.com/)
 
--  # Aula 08-09 - Métodos GET, POST, PATCH e DELETE
+- # Aula 08-09 - Métodos GET, POST, PATCH e DELETE
 
 ## 5. Tratamento de Erros
 
@@ -40,7 +40,7 @@ O objetivo principal deste repositório é consolidar os conhecimentos essenciai
 - convidados.service.ts → Lógica de manipulação dos dados
 - criar-convidado.dto.ts → Modelo de dados para cadastro
 
-## 🧠 Conceitos Aprendidos
+## Conceitos Aprendidos
 
 - Diferença entre GET, POST, PATCH e DELETE
 - Separação de responsabilidades: Controller vs Service
