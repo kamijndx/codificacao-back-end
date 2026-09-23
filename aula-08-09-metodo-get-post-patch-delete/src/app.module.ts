@@ -3,6 +3,7 @@ import { createObserveModule } from '@nestjs/observe';
 import { AppController } from './app.controller.js';
 import { AppService } from './app.service.js';
 import { ConvidadosController } from './convidado.controller.js';
+import { ConvidadosService } from './convidados.service.js';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
@@ -11,6 +12,6 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
   ],
   controllers: [AppController,ConvidadosController],
-  providers: [AppService],
+  providers: [AppService, ConvidadosService],
 })
 export class AppModule {}
