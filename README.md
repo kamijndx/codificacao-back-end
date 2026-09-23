@@ -24,27 +24,28 @@ O objetivo principal deste repositório é consolidar os conhecimentos essenciai
 - **Gerenciador de Dependências:** [NPM](https://www.npmjs.com/)
 - **Controle de Versão:** [Git](https://git-scm.com/) e [GitHub](https://github.com/)
 
--  *Aula 02: Módulos CommonJS e ESM*
-  - Diferenças entre require/module.exports (CommonJS) e import/export (ESM).
+-  # Aula 08-09 - Métodos GET, POST, PATCH e DELETE
 
--  *Aula 03: Streams e Buffers*
-  - Geração de arquivos grandes com fs.createWriteStream.
-  - Leitura linha a linha com fs.createReadStream + readline, filtragem de logs de erro.
-  - Medição de consumo de memória (RSS/heap) com process.memoryUsage().
+## 5. Tratamento de Erros
 
--  *Aula 04: Tratamento Global de Exceções*
-  - Middleware de tratamento de erros em server.js.
+- Utilização de NotFoundException para recurso não encontrado
+- Mensagens claras no console com prefixos [Operador] e [Administrador]
+- Respostas padronizadas com mensagem e dados
 
--  *Aula 05: Variáveis de Ambiente e Configurações de Segurança*
-  - Uso de .env para configurações sensíveis e boas práticas de segurança.
+## 6. Arquivos Criados
 
--  *Aula 06: Networking e Primeiro Servidor HTTP*
-  - Atividade prática "Servidor Sentinela" — servidor HTTP criado com Node.js puro (sem framework).
+- app.module.ts → Módulo raiz da aplicação
+- app.service.ts → Serviço inicial de verificação
+- convidados.controller.ts → Rotas e métodos HTTP
+- convidados.service.ts → Lógica de manipulação dos dados
+- criar-convidado.dto.ts → Modelo de dados para cadastro
 
--  *Aula 07: Projeto NestJS*
-  - Criação do projeto NestJS (app.controller.ts, app.service.ts, app.module.ts).
-  - Rota GET /status mapeada e testada.
+## 🧠 Conceitos Aprendidos
 
--  *Aula 08-09: Métodos GET, POST, PATCH e DELETE*
-  - Implementação de CRUD completo de convidados (convidado.controller.ts, convidados.service.ts).
-  - Rotas: GET /convidado, POST /convidado, PATCH /convidado/:id, DELETE /convidado/:id.
+- Diferença entre GET, POST, PATCH e DELETE
+- Separação de responsabilidades: Controller vs Service
+- Uso de DTO para tipagem e organização
+- Parâmetros de rota (:id) e corpo da requisição (@Body())
+- Manipulação de arrays em memória
+- Códigos de status HTTP
+- Tratamento de exceções no NestJS
