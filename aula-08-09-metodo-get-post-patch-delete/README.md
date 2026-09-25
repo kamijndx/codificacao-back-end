@@ -118,3 +118,28 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+- # Aula 08-09 - Métodos GET, POST, PATCH e DELETE
+
+## 5. Tratamento de Erros
+
+- Utilização de NotFoundException para recurso não encontrado
+- Mensagens claras no console com prefixos [Operador] e [Administrador]
+- Respostas padronizadas com mensagem e dados
+
+## 6. Arquivos Criados
+
+- app.module.ts → Módulo raiz da aplicação
+- app.service.ts → Serviço inicial de verificação
+- convidados.controller.ts → Rotas e métodos HTTP
+- convidados.service.ts → Lógica de manipulação dos dados
+- criar-convidado.dto.ts → Modelo de dados para cadastro
+
+## Conceitos Aprendidos
+
+- Diferença entre GET, POST, PATCH e DELETE
+- Separação de responsabilidades: Controller vs Service
+- Uso de DTO para tipagem e organização
+- Parâmetros de rota (:id) e corpo da requisição (@Body())
+- Manipulação de arrays em memória
+- Códigos de status HTTP
+- Tratamento de exceções no NestJS
