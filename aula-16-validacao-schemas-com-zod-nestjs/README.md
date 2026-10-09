@@ -80,6 +80,7 @@ create(@Body() body: CreateColaboradorDto) {
   "erros": [
     { "campo": "nome", "mensagem": "Required" }
   ]
+  
 }
 ```
 
