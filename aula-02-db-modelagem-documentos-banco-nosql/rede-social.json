@@ -1,0 +1,15 @@
+{
+  "texto": "Primeiro dia de aula!",
+  "usuario": "k4mi.jd",
+   "data": "1111-11-11",
+
+ "curtidas": [
+    {"nome":"Carlo123"},
+    {"nome": "Anasouza3"},
+    {"nome": "Pedro_"}
+  ],
+  "comentarios": [
+    {"usuario": "Carl123", "texto": "bora estudar!"},
+    { "usuario": "Anasouza3","texto": "achei a aula ótima."}
+  ]
+}
