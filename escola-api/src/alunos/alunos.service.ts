@@ -69,8 +69,7 @@ if (curso) {
         const alunoRemovido = await this.alunoModel.findByIdAndDelete(id).exec();
         
         if(!alunoRemovido){
-            throw new NotFoundException(`Aluno com id ${id} não encontrado.`);
-        }
+            throw new NotFoundException(`Aluno com id ${id} não encontrado.`); }
 
         return alunoRemovido;
     
