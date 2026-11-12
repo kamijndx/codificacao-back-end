@@ -45,7 +45,7 @@ export class AlunosController {
     // }
     @Get()
     @ApiOperation({
-        summary: 'Listar alunos com paginação'
+        summary: 'Listar alunos com paginação,filtros opcionais e ordenação'
     })
     @ApiResponse({
         status: 200,
@@ -92,15 +92,42 @@ export class AlunosController {
 
 
 
-     findPage(
+
+
+    @ApiQuery({
+        name: 'orderBy',
+        required: false,
+        type: String,
+        description: 'Campos (Ex:nome,idade,matricula e curso'
+    })
+    @ApiQuery({
+        name: 'orderDirection',
+        required: false,
+        enum:[
+'asc',
+'desc',
+        ],
+        description:'(asc) para crescente e (desc) para decrescente'
+    })
+
+
+
+     findPagefilter(
         @Query('page', new DefaultValuePipe(1), ParseIntPipe) page: number,
         @Query('limit', new DefaultValuePipe(10), ParseIntPipe) limit: number,
         @Query('nome')nome?: string,
         @Query('curso') curso?: string,
-
+        @Query('orderBy') orderBy?: string,
+        @Query('orderDirection') orderDirection?: 'asc' | 'desc',
 
     ){
-        return this.alunoService.findPage(page, limit,nome,curso);
+        return this.alunoService.findPagefilter
+        (page,
+             limit,
+             nome,
+             curso,
+            orderBy,
+        orderDirection);
      }
 
 
