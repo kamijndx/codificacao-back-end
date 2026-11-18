@@ -143,4 +143,26 @@ export class AlunosController {
     remove(@Param('id') id: string){
         return this.alunoService.remove(id);
     }
+
+    @Patch (':id/restaurar')
+    @ApiOperation({
+        summary:'Restaura um aluno especifico removido por Soft Delete',
+    })
+
+@ApiResponse({
+    status:200,
+    description:'Aluno restaurado',
+
+})
+@ApiResponse({
+    status:404,
+    description:'Aluno não encontrado',
+})
+@ApiResponse({
+    status:500,
+    description:'Erro no servidor'
+})
+restore(@Param('id') id: string){
+    return this.alunoService.restore(id);
+}
 }
